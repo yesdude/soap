@@ -4,7 +4,9 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from random import randint
-
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Circle
 
 Client = discord.Client() #so the word client is able to be used instead of writing the whole thing
 bot_prefix= "/" #set the bots prefix, what ever symbol is used here will need to be put in front of commands
@@ -253,5 +255,31 @@ async def on_message(owo):
         await client.send_message(channelid, "What's this?")
         print('owo command was run!')
     await client.process_commands(owo)
+
+@client.command(pass_context=True)
+async def pubg(ctx):
+    channelid = str
+    channelid = ctx.message.channel
+    print("/pubg command was executed...")
+    # Get an example image
+    import matplotlib.cbook as cbook
+    image_file = cbook.get_sample_data('/Users/admin/Desktop/Discord Bot/map/map.png')
+    img = plt.imread(image_file)
+
+    # Make some example data
+    x = np.random.rand(1)*img.shape[1]
+    y = np.random.rand(1)*img.shape[0]
+
+    # Create a figure. Equal aspect so circles look circular
+    fig,ax = plt.subplots(1)
+    ax.set_aspect('equal')
+
+    # Show the image
+    ax.imshow(img)
+
+    # Now, loop through coord arrays, and create a circle at each x,y pair
+    for xx,yy in zip(x,y):
+        circ = Circle((xx,yy),25)
+        ax.add_patch(circ)
 
 client.run("MzM2NDMxMjU3NTgxOTEyMDY0.DE82AA.PZeFLPjS1nhzZYvGjCCs9eidrGU") #This is the bot's token, tells the client what bot it is controlling
