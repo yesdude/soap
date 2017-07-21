@@ -5,3 +5,4 @@ psycopg2==2.6.2
 whitenoise==3.2
 discord.py==0.16.8
 matplotlib
+python3-tk
