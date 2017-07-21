@@ -4,4 +4,4 @@ gunicorn==19.6.0
 psycopg2==2.6.2
 whitenoise==3.2
 discord.py==0.16.8
-matplotlib
+matplotlib==1.5.3
