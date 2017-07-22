@@ -1,2 +1,1 @@
-web: gunicorn spookster.wsgi
- 
+worker: SpooksterBot.py
