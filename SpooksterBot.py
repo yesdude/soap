@@ -171,46 +171,46 @@ async def illya(ctx):
     print("/illya command was run")
     rnd = randint(1,14)
     if rnd is 1:
-        await client.send_file(channelid, r'loli1.jpg')
+        await client.send_file(channelid, '/app/Discord Bot/illya/loli1.jpg')
 
     elif rnd is 2:
-        await client.send_file(channelid, r'loli2.jpg')
+        await client.send_file(channelid, '/app/Discord Bot/illya/loli2.jpg')
         
     elif rnd is 3:
-        await client.send_file(channelid, r'loli3.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli3.jpg')
         
     elif rnd is 4:
-        await client.send_file(channelid, r'loli4.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli4.jpg')
            
     elif rnd is 5:
-        await client.send_file(channelid, r'loli5.png')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli5.png')
            
     elif rnd is 6:
-        await client.send_file(channelid, r'loli6.png')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli6.png')
 
     elif rnd is 7:
-        await client.send_file(channelid, r'loli7.png')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli7.png')
     
     elif rnd is 8:
-        await client.send_file(channelid, r'loli8.gif')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli8.gif')
     
     elif rnd is 9:
-        await client.send_file(channelid, r'loli9.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli9.jpg')
     
     elif rnd is 10:
-        await client.send_file(channelid, r'loli10.gif')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli10.gif')
     
     elif rnd is 11:
-        await client.send_file(channelid, r'loli11.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli11.jpg')
     
     elif rnd is 12:
-        await client.send_file(channelid, r'loli12.png')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli12.png')
     
     elif rnd is 13:
-        await client.send_file(channelid, r'loli13.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli13.jpg')
     
     elif rnd is 14:
-        await client.send_file(channelid, r'loli14.jpg')
+        await client.send_file(channelid, r'/app/Discord Bot/illya/loli14.jpg')
     
 @client.command(pass_context=True) #allows you to warn people doesn't actually mean anything
 async def warning(ctx, args):
