@@ -198,7 +198,7 @@ async def illya(ctx):
         await client.send_file(channelid, r'loli9.jpg')
     
     elif rnd is 10:
-        await client.send_file(channelid, r'Dloli10.gif')
+        await client.send_file(channelid, r'loli10.gif')
     
     elif rnd is 11:
         await client.send_file(channelid, r'loli11.jpg')
