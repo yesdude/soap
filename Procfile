@@ -1,1 +1,1 @@
-worker: SpooksterBot.py
+worker: python SpooksterBot.py
